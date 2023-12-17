@@ -4,10 +4,7 @@ console.log('Number of categories:', numberLi.toString());
 
 liItems.forEach(item => {
   const categories = item.firstElementChild.textContent;
-  const eltments  = item.lastElementChild.children.length;
+  const eltments = item.lastElementChild.children.length;
   console.log('Category:', categories);
   console.log(`Elements:`, eltments);
 });
-
-
-

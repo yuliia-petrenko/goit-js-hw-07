@@ -4,13 +4,13 @@ runForm.addEventListener('submit', event => {
   const elemForm = event.target.elements;
   const formValue = {
     email: elemForm.email.value.trim(),
-    password: elemForm.password.value,
+    password: elemForm.password.value.trim(),
   };
-  console.log(formValue);
+
   if (formValue.email === '' || formValue.password === '') {
     alert('All form fields must be filled in');
+  } else {
+    console.log(formValue);
+    runForm.reset();
   }
-  runForm.reset();
 });
-
-
